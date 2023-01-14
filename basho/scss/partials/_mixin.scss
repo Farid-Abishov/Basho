@@ -1,0 +1,64 @@
+@mixin flex($display, $direction, $justf, $gap, $wrap: null) {
+    display: $display;
+    justify-content: $justf;
+    gap: $gap;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+@mixin card($card-width, $card-height) {
+    max-width: $card-width;
+    height: $card-height;
+}
+@mixin img($br_radius, $img_width, $img_height, $obj_fit) {
+    width: $img_width;
+    height: $img_height;
+    border-radius: $br_radius;
+    object-fit: $obj_fit;
+}
+@mixin card_links($m-top, $color, $txt_dcrtn, $padding, $br_radius, $bg_color) {
+    margin-top: $m-top;
+    color: $color;
+    text-decoration: $txt_dcrtn;
+    padding: $padding;
+    border-radius: $br_radius;
+    background-color: $bg_color;
+}
+@mixin big_btn(
+    $padding: null,
+    $width: null,
+    $br_radius: null,
+    $bg_color: null,
+    $color: null,
+    $txt_dcrtn: null,
+    $f_size: null,
+    $txt_align: null
+) {
+    padding: $padding;
+    width: $width;
+    border-radius: $br_radius;
+    background-color: $bg_color;
+    color: $color;
+    text-decoration: $txt_dcrtn;
+    font-size: $f_size;
+    text-align: $txt_align;
+}
+@mixin card_ltl_img($pstn, $left, $bottom, $width, $height, $display, $trstn, $br_radius, $border) {
+    position: $pstn;
+    left: $left;
+    bottom: $bottom;
+    width: $width;
+    height: $height;
+    display: $display;
+    transition: $trstn;
+    border-radius: $br_radius;
+    border: $border;
+}
+@mixin input($pdng, $br_radius, $border, $f_size, $color, $bg_color, $transtn) {
+    padding: $pdng;
+    border-radius: $br_radius;
+    border: $border;
+    font-size: $f_size;
+    color: $color;
+    background-color: $bg_color;
+    transition: $transtn;
+}
