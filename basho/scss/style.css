@@ -38,6 +38,11 @@ body {
   transition: 0.2s ease-in-out;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .container #last-cntnt .left input {
+    font-size: 18px;
+  }
+}
 .container #last-cntnt .left input:focus {
   transform: translate(-10px, 0px);
 }
@@ -55,6 +60,12 @@ body {
   font-size: 24px;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .container #last-cntnt .right a {
+    padding: 15px;
+    width: 140px;
+  }
+}
 .container #last-cntnt .right a:hover {
   background-color: blue;
 }
@@ -64,13 +75,18 @@ body {
   max-width: 400px;
   color: rgba(86, 85, 85, 0.697);
 }
+@media (max-width: 768px) {
+  .container #last-cntnt .right span {
+    display: none;
+  }
+}
 
 #cards .cards-container {
   padding-bottom: 50px;
 }
 #cards .cards-container .item_container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 10px;
   flex-direction: row;
   flex-wrap: wrap;
@@ -151,12 +167,22 @@ body {
     font-size: 20px;
   }
 }
+@media (max-width: 991px) {
+  .all .above .left p {
+    font-size: 35px;
+  }
+}
 .all .above .left h2 {
   font-size: 60px;
 }
 @media (max-width: 768px) {
   .all .above .left h2 {
     font-size: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .all .above .left h2 {
+    font-size: 35px;
   }
 }
 .all .above .right p {
@@ -409,6 +435,9 @@ body {
 #recommend .rcmnd_ftr .left p span {
   font-weight: 600;
 }
+#recommend .rcmnd_ftr .right {
+  display: flex;
+}
 #recommend .rcmnd_ftr .right input {
   padding: 20px;
   border-radius: 30px;
@@ -418,6 +447,11 @@ body {
   background-color: rgba(219, 215, 215, 0.374);
   transition: 0.2s ease-in-out;
   text-align: center;
+}
+@media (max-width: 768px) {
+  #recommend .rcmnd_ftr .right input {
+    font-size: 12px;
+  }
 }
 #recommend .rcmnd_ftr .right input:focus {
   transform: translate(-10px, 0px);
@@ -433,6 +467,13 @@ body {
   text-decoration: none;
   font-size: 24px;
   text-align: center;
+}
+@media (max-width: 768px) {
+  #recommend .rcmnd_ftr .right a {
+    width: 90px;
+    font-size: 11px;
+    display: inline-block;
+  }
 }
 #recommend .rcmnd_ftr .right a:hover {
   background-color: blue;

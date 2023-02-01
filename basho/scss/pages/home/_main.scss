@@ -16,6 +16,9 @@
         display: flex;
         .left {
             input {
+                @media (max-width: 768px) {
+                    font-size: 18px;
+                }
                 @include input(
                     20px,
                     30px,
@@ -35,6 +38,10 @@
             transform: translate(-40px, 0px);
 
             a {
+                @media (max-width: 768px) {
+                 padding: 15px;
+                 width: 140px;
+                }
                 display: inline-block;
                 @include big_btn(20px, 170px, 30px, black, white, none, 24px, center);
                 &:hover {
@@ -42,6 +49,9 @@
                 }
             }
             span {
+                @media (max-width: 768px) {
+                 display: none;   
+                }
                 margin-left: 5px;
                 display: inline-block;
                 max-width: 400px;
@@ -54,7 +64,7 @@
     .cards-container {
         padding-bottom: 50px;
         .item_container {
-            @include flex(flex, row, space-between, 10px, wrap);
+            @include flex(flex, row, space-evenly, 10px, wrap);
             .items {
                 width: 315px;
                 @media (max-width: 768px) {
@@ -116,11 +126,17 @@
                 @media (max-width: 768px) {
                     font-size: 20px;
                 }
+                @media (max-width: 991px) {
+                    font-size: 35px;
+                }
             }
             h2 {
                 font-size: 60px;
                 @media (max-width: 768px) {
                     font-size: 20px;
+                }
+                @media (max-width: 991px) {
+                    font-size: 35px;
                 }
             }
         }
@@ -339,14 +355,18 @@
                 font-size: 50px;
                 @media (max-width: 768px) {
                     font-size: 20px;
-                }
+                }                
                 span {
                     font-weight: 600;
                 }
             }
         }
         .right {
+            display: flex;
             input {
+                @media (max-width: 768px) {
+                font-size: 12px;
+                }
                 @include input(
                     20px,
                     30px,
@@ -363,6 +383,11 @@
                 }
             }
             a {
+                @media (max-width: 768px) {
+                 width: 90px;
+                 font-size: 11px;
+                 display: inline-block;
+                }
                 transform: translate(-40px, 0px);
                 display: inline-block;
                 @include big_btn(20px, 170px, 30px, black, white, none, 24px, center);
